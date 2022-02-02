@@ -50,14 +50,12 @@ export const FormText = (props) => {
                        
             </div>
             <div className={`container text-${props.mode ==='light' ? 'dark' : 'light'}`}>
-                <h3>Your Text Summary</h3>
-                <p>Text 3 : In above text {text.trim().split(/\s+/).length} words and {text.length} characters</p>
-                <p>Text 2 :  In above text {((text.trim().split(" ")).filter(function (element) {
+                <h3>Your Text Result</h3>
+                <p>Text Length : In above text {((text.trim().split(" ")).filter(function (element) {
                     return element != "";
                 })).length} words and {text.length} characters </p>
-                <p>Read this content approx {0.8 * text.split(" ").length} in minutes</p>
-                <h4>Preview</h4>
-                <p>{text}</p>   
+                <p>Reading Time : Read this content approx {0.8 * text.split(" ").length} in minutes</p>
+                <p>Preview : {text}</p>
             </div>
         </>  
     )
